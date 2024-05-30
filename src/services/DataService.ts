@@ -21,4 +21,12 @@ export class DataService {
         })
         return result;
     }
+
+    public async reserveSpace(spaceId: string): Promise<string | undefined> {
+        if (spaceId === '1') {
+            return('55555')
+        } else {
+            return undefined
+        }
+    }
 }
