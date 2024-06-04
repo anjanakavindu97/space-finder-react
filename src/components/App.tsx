@@ -1,7 +1,7 @@
 import React from 'react';
 import { User } from '../models/Model'
 import { AuthService } from '../services/AuthService'
-import { Loging } from './Login';
+import { Login } from './Login';
 import {  BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Navbar } from './Navbar';
 import { Home } from './Home';
@@ -42,7 +42,7 @@ export class App extends React.Component<{}, AppState>{
             <Navbar user={this.state?.user}/>
             <Routes>
               <Route path='/' element={<Home/>}/>
-              <Route path='/login' element={<Loging authService={this.authService} setUser={this.setUser}/>} />
+              <Route path='/login' element={<Login authService={this.authService} setUser={this.setUser}/>} />
               <Route path='/profile' element={<Profile authService={this.authService} user={this.state.user}/>} />
               <Route path='/spaces' element={<Spaces dataService={this.dataService}/>} />
             </Routes>

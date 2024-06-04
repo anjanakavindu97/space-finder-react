@@ -19,7 +19,7 @@ interface CustomEvent {
     target: HTMLInputElement
 }
 
-export class Loging extends React.Component<LoginProps, LogingState> {
+export class Login extends React.Component<LoginProps, LogingState> {
 
     state: LogingState = {
         userName: '',
