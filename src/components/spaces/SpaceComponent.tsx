@@ -1,6 +1,7 @@
 import { Component } from "react";
-import "./SpaceComponent.css";
 const image = require("../../assets/generic.jpg");
+import "./SpaceComponent.css";
+
 
 interface SpaceComponentProps {
     spaceId: string
